@@ -1,0 +1,77 @@
+/* Overall page container for centering */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Takes full viewport height */
+    background-color: #f0f2f5; /* Light grey background for the page */
+    padding: 20px; /* Add some padding around the edges */
+    box-sizing: border-box; /* Ensures padding doesn't add to element's total width/height */
+}
+
+/* Container for the login form itself */
+.login-container {
+    background-color: #fff; /* White background for the form */
+    padding: 40px;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    width: 100%;
+    max-width: 380px; /* Maximum width for the form */
+    box-sizing: border-box; /* Ensures padding doesn't add to element's total width/height */
+}
+
+/* Heading for the login form */
+.login-container h2 {
+    margin-bottom: 30px; /* Space below the heading */
+    color: #333; /* Dark grey text color */
+    font-size: 28px;
+    font-weight: 600; /* Slightly bolder */
+}
+
+/* Container for the input fields */
+.login-input-fields {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 15px; /* Space between input fields */
+    margin-bottom: 25px; /* Space below input fields and above button */
+}
+
+/* Styling for individual input fields */
+.login-input-fields input {
+    padding: 14px 18px; /* Padding inside the input */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 6px; /* Rounded input corners */
+    font-size: 16px;
+    width: 100%; /* Take full width of its container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    -webkit-appearance: none; /* Remove default browser styling for inputs */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Focus state for input fields */
+.login-input-fields input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Blue glow on focus */
+}
+
+/* Styling for the login button */
+.login-container button {
+    background-color: #007bff; /* Primary blue color */
+    color: white; /* White text */
+    padding: 15px 25px;
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded button corners */
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer; /* Pointer on hover */
+    width: 100%; /* Full width */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the login button */
+.login-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
